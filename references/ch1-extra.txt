@@ -1,0 +1,11 @@
+数据库第一章
+数据库发展概述
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3H9QWWHD&projectId=PKAASAX7H
+四个基本概念
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=P38YFQWH8&projectId=PKAASAX7H
+数据模型与数据建模
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3HAFWWHD&projectId=PKAASAX7H
+数据库的三级模式结构
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F35XPWWHD&projectId=PKAASAX7H
+文件系统与数据库系统
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=FKNFAS5HH&projectId=PKAASAX7H
