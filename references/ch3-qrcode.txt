@@ -1,0 +1,28 @@
+第三章
+SQL定义
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=PKZVFWQ78&projectId=PKAASAX7H
+
+基本SQL查询
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3DVPWQHD&projectId=PKAASAX7H
+
+复杂SQL查询
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3BBPWQ7D&projectId=PKAASAX7H
+
+空值
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3QHFWQHD&projectId=PKAASAX7H
+
+选课三个表
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=P32WASX7H&projectId=PKAASAX7H
+
+扩展阅读
+不同产品，drop table处理策略比较
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=FK9QASX7H&projectId=PKAASAX7H
+
+Select语句的一般格式
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3KPSS5HH&projectId=PKAASAX7H
+
+加了 unique 约束条件的属性能否取空值
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=PKLWASXHH&projectId=PKAASAX7H
+
+
+
