@@ -75,6 +75,13 @@
 	FROM SC
 	ORDER BY Cno,grade DESC;         
      ```
+- **例3.48**：查询平均成绩大于等于90分的学生学号和平均成绩
+      ```sql
+       SELECT Sno,AVG(Grade)
+       FROM SC
+       GROUP BY Sno
+       HAVING AVG(Grade)>=90;
+      ```
 ---
 
 ### 二、聚集函数与分组查询
