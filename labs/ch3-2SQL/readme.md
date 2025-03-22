@@ -98,8 +98,7 @@
       GROUP BY Cno; 
      ```
 - **例3.47**：查询2019年第2学期选修了10门以上课程的学生学号
- 
-      ```sql
+     ```sql
        SELECT Sno
        FROM  SC
        WHERE Semester='20192'               
