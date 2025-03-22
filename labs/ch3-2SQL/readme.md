@@ -11,7 +11,11 @@
 | 例3.18  | 查询全体学生的详细记录（全部列）                     | ```sql<br>SELECT Sno, Sname, Ssex, Sbirthdate, Smajor<br>FROM Student;<br>``` |
 | 例3.19  | 查询全体学生的姓名及其年龄（通过日期计算）           | ```sql<br>SELECT Sname, (extract(year from current_date) - extract(year from Sbirthdate)) AS 年龄<br>FROM Student;<br>``` |
 | 例3.20  | 查询全体学生的姓名、出生日期和主修专业（附带字符串）   | ```sql<br>SELECT Sname, 'Date of Birth: ', Sbirthdate, Smajor<br>FROM Student;<br>``` |
-
+- **例3.19**：查询全体学生的姓名及其年龄（通过日期计算）
+  ```sql
+  select Sno, Sname, (extract(year from current_date)-extract(year from Sbirthdate)) "年齡"
+  from student;
+  ```
 另外，示例中还介绍了如何利用 DISTINCT 去除重复行（例3.21），以及在 WHERE 子句中用比较、范围（BETWEEN）、集合（IN/NOT IN）及字符匹配（LIKE）等谓词构造查询（例3.22～例3.35）。  
 例如：  
 - **例3.29**：查询学号为“20180003”的学生详细情况  
