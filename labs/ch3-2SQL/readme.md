@@ -75,7 +75,6 @@
 		FROM SC
 		ORDER BY Cno,grade DESC;          /*DESC需要明确写出来*/
        ```
-
 ---
 
 ### 二、聚集函数与分组查询
