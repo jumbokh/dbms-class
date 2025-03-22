@@ -73,7 +73,7 @@
        ```sql
 		SELECT *
 		FROM SC
-		ORDER BY Cno,grade DESC;          /*DESC需要明确写出来*/
+		ORDER BY Cno,grade DESC;         
        ```
 ---
 
