@@ -97,7 +97,17 @@
   WHERE SC.Sno = Avg_SC.Avg_sno AND SC.Grade >= Avg_SC.Avg_grade;
   ```
   此示例（在简报中属于例3.59的变体）用于找出每个学生超过自己选修课程平均成绩的课程号。
-
+```sql
+SELECT SC.Sno, SC.Cno
+FROM SC
+JOIN (
+    SELECT Sno, AVG(Grade) AS Avg_grade 
+    FROM SC 
+    GROUP BY Sno
+) AS Avg_SC ON SC.Sno = Avg_SC.Sno
+WHERE SC.Grade >= Avg_SC.Avg_grade
+LIMIT 0, 25;
+```
 ---
 
 以上即为“第3章 关系数据库标准语言SQL（2）--3.3.pptx”中各示例的提取与归纳。各示例详细展示了SQL查询语句的基本结构、单表查询、连接查询、嵌套查询、集合操作以及基于派生表的查询等内容，供大家在学习和实践中参考。
