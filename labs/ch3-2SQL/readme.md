@@ -93,10 +93,18 @@
 | 例3.50  | 查询平均成绩排名在第3-5名的学生（使用LIMIT和OFFSET）             | ```sql<br>SELECT Sno, AVG(Grade)<br>FROM SC<br>GROUP BY Sno<br>ORDER BY AVG(Grade) DESC<br>LIMIT 5 OFFSET 2;<br>``` |
 - **例3.46**： 求各个课程号及选修该课程的人数
      ```sql
-      SELECT Cno，COUNT(Sno)
+      SELECT Cno,COUNT(Sno)
       FROM    SC
       GROUP BY Cno; 
      ```
+- **例3.47**：查询2019年第2学期选修了10门以上课程的学生学号
+      ```sql
+       SELECT Sno
+       FROM  SC
+       WHERE Semester='20192'              - /*先求出2019年第2学期选课的所有学生*/
+       GROUP BY Sno                        - /*用GROUP BY子句按Sno进行分组*/
+       HAVING COUNT(*) >10;                - /* 用聚集函数COUNT对每一组计数 */
+      ```
 ---
 
 ### 三、连接查询示例
