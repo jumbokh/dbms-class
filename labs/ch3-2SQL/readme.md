@@ -101,9 +101,9 @@
       ```sql
        SELECT Sno
        FROM  SC
-       WHERE Semester='20192'              - /*先求出2019年第2学期选课的所有学生*/
-       GROUP BY Sno                        - /*用GROUP BY子句按Sno进行分组*/
-       HAVING COUNT(*) >10;                - /* 用聚集函数COUNT对每一组计数 */
+       WHERE Semester='20192'               
+       GROUP BY Sno                       
+       HAVING COUNT(*) >10;             
       ```
 ---
 
