@@ -75,21 +75,6 @@
 	FROM SC
 	ORDER BY Cno,grade DESC;         
      ```
-- **例3.48**：查询平均成绩大于等于90分的学生学号和平均成绩
-      ```sql
-       SELECT Sno,AVG(Grade)
-       FROM SC
-       GROUP BY Sno
-       HAVING AVG(Grade)>=90;
-      ```
-- **例3.50**：查询平均成绩排名在3-5名的学生学号和平均成绩
-```sql
-SELECT Sno,AVG(Grade)
-FROM SC
-GROUP BY Sno
-ORDER BY AVG(Grade) DESC
-LIMIT 5 OFFSET 2;
-```
 ---
 
 ### 二、聚集函数与分组查询
@@ -135,6 +120,14 @@ WHERE Course.Cname='数据库系统概论'
 AND SC.Cno=Course.Cno
 ORDER BY GRADE DESC
 LIMIT 10; 
+```
+- **例3.50**：查询平均成绩排名在3-5名的学生学号和平均成绩
+```sql
+SELECT Sno,AVG(Grade)
+FROM SC
+GROUP BY Sno
+ORDER BY AVG(Grade) DESC
+LIMIT 5 OFFSET 2;
 ```
 ---
 
