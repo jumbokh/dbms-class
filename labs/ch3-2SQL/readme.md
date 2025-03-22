@@ -82,6 +82,14 @@
        GROUP BY Sno
        HAVING AVG(Grade)>=90;
       ```
+- **例3.50**：查询平均成绩排名在3-5名的学生学号和平均成绩
+```sql
+SELECT Sno,AVG(Grade)
+FROM SC
+GROUP BY Sno
+ORDER BY AVG(Grade) DESC
+LIMIT 5 OFFSET 2;
+```
 ---
 
 ### 二、聚集函数与分组查询
