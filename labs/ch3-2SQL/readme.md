@@ -66,9 +66,16 @@
      ```sql
   		SELECT Sno,Grade
 	  	FROM SC
-	  	WHERE Cno='81003’
+	  	WHERE Cno='81003'
 	  	ORDER BY Grade DESC;
      ```
+- **例3.40**：查询全体学生选修课程情况，查询结果先按照课程号升序排列，同一课程中按成绩降序排列。
+       ```sql
+		SELECT *
+		FROM SC
+		ORDER BY Cno,grade DESC;          /*DESC需要明确写出来*/
+       ```
+
 ---
 
 ### 二、聚集函数与分组查询
