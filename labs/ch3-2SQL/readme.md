@@ -16,6 +16,12 @@
   select Sno, Sname, (extract(year from current_date)-extract(year from Sbirthdate)) "年齡"
   from student;
   ```
+- **例3.25**： 查询年龄在20~23岁（包括20岁和23岁）之间的学生的学生的姓名、出生年月和主修专业
+  ```sql
+  SELECT Sname, Sbirthdate, Smajor
+  FROM Student
+  WHERE extract(year from current_date) - extract(year from Sbirthdate) BETWEEN 20 AND 23; 
+  ```
 另外，示例中还介绍了如何利用 DISTINCT 去除重复行（例3.21），以及在 WHERE 子句中用比较、范围（BETWEEN）、集合（IN/NOT IN）及字符匹配（LIKE）等谓词构造查询（例3.22～例3.35）。  
 例如：  
 - **例3.29**：查询学号为“20180003”的学生详细情况  
