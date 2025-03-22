@@ -62,7 +62,13 @@
     FROM Course 
     WHERE Cname LIKE 'DB＼_%i__' ESCAPE '\＼';
     ```
-
+- **例3.39**：查询选修了81003号课程的学生的学号及其成绩，查询结果按分数的降序排列
+     ```sql
+  		SELECT Sno,Grade
+	  	FROM SC
+	  	WHERE Cno='81003’
+	  	ORDER BY Grade DESC;
+     ```
 ---
 
 ### 二、聚集函数与分组查询
