@@ -112,6 +112,13 @@
        GROUP BY Sno                       
        HAVING COUNT(*) >10;           
      ```
+- **例3.48**：查询平均成绩大于等于90分的学生学号和平均成绩
+     ```sql
+      SELECT Sno,AVG(Grade)
+       FROM SC
+       GROUP BY Sno
+       HAVING AVG(Grade)>=90;
+     ```
 ---
 
 ### 三、连接查询示例
