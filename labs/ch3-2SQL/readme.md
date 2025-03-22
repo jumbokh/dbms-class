@@ -104,7 +104,7 @@
        WHERE Semester='20192'               
        GROUP BY Sno                       
        HAVING COUNT(*) >10;           
-      ```
+     ```
 ---
 
 ### 三、连接查询示例
