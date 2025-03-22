@@ -103,7 +103,7 @@
        FROM  SC
        WHERE Semester='20192'               
        GROUP BY Sno                       
-       HAVING COUNT(*) >10;             
+       HAVING COUNT(*) >10;           
       ```
 ---
 
