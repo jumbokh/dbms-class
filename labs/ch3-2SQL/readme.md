@@ -119,6 +119,15 @@
        GROUP BY Sno
        HAVING AVG(Grade)>=90;
 ```
+- **例3.49**：查询选修了数据库系统概论课程的成绩排名前10名的学生学号
+```sql
+SELECT Sno
+FROM SC,Course
+WHERE Course.Cname='数据库系统概论'
+AND SC.Cno=Course.Cno
+ORDER BY GRADE DESC
+LIMIT 10; 
+```
 ---
 
 ### 三、连接查询示例
