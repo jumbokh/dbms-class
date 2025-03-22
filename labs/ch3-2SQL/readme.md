@@ -22,6 +22,13 @@
   FROM Student
   WHERE extract(year from current_date) - extract(year from Sbirthdate) BETWEEN 20 AND 23; 
   ```
+- **例3.28**： 查询既不是计算机科学与技术专业也不是信息安全专业学生的姓名和性别
+  ```sql
+   SELECT Sname,Ssex
+   FROM Student
+   WHERE Smajor NOT IN ( '计算机科学与技术','信息安全' );
+  ```
+  
 另外，示例中还介绍了如何利用 DISTINCT 去除重复行（例3.21），以及在 WHERE 子句中用比较、范围（BETWEEN）、集合（IN/NOT IN）及字符匹配（LIKE）等谓词构造查询（例3.22～例3.35）。  
 例如：  
 - **例3.29**：查询学号为“20180003”的学生详细情况  
