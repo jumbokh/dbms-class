@@ -91,7 +91,12 @@
 | 例3.48  | 查询平均成绩大于等于90分的学生（分组后使用HAVING）               | ```sql<br>SELECT Sno, AVG(Grade)<br>FROM SC<br>GROUP BY Sno<br>HAVING AVG(Grade) >= 90;<br>``` |
 | 例3.49  | 查询选修“数据库系统概论”课程成绩排名前10的学生（使用ORDER BY与LIMIT） | ```sql<br>SELECT Sno<br>FROM SC, Course<br>WHERE Course.Cname='数据库系统概论' AND SC.Cno=Course.Cno<br>ORDER BY Grade DESC<br>LIMIT 10;<br>``` |
 | 例3.50  | 查询平均成绩排名在第3-5名的学生（使用LIMIT和OFFSET）             | ```sql<br>SELECT Sno, AVG(Grade)<br>FROM SC<br>GROUP BY Sno<br>ORDER BY AVG(Grade) DESC<br>LIMIT 5 OFFSET 2;<br>``` |
-
+- **例3.46**： 求各个课程号及选修该课程的人数
+     ```sql
+      SELECT Cno，COUNT(Sno)
+      FROM    SC
+      GROUP BY Cno; 
+     ```
 ---
 
 ### 三、连接查询示例
