@@ -141,7 +141,12 @@ LIMIT 5 OFFSET 2;
 | 例3.54  | 自身连接查询：查询每门课的间接先修课（通过Course表的自身连接实现）      | ```sql<br>SELECT FIRST.Cno, SECOND.Cpno<br>FROM Course AS FIRST, Course AS SECOND<br>WHERE FIRST.Cpno = SECOND.Cno AND SECOND.Cpno IS NOT NULL;<br>``` |
 | 例3.55  | 外连接查询：以Student为主，列出所有学生及其选课情况，若无选课则显示NULL    | ```sql<br>SELECT Student.Sno, Sname, Ssex, Sbirthdate, Smajor, Cno, Grade<br>FROM Student LEFT OUTER JOIN SC ON Student.Sno = SC.Sno;<br>``` |
 | 例3.56  | 多表连接查询：查询每个学生的学号、姓名、选修课程名称及成绩              | ```sql<br>SELECT Student.Sno, Sname, Cname, Grade<br>FROM Student, SC, Course<br>WHERE Student.Sno = SC.Sno AND SC.Cno = Course.Cno;<br>``` |
-
+- **例3.54**：查询每一门课的间接先修课（即先修课的先修课）
+```sql
+SELECT FIRST.Cno,SECOND.Cpno
+FROM Course AS FIRST, Course AS SECOND
+WHERE FIRST.Cpno=SECOND.Cno and SECOND.Cpno IS NOT NULL;
+```
 ---
 
 ### 四、嵌套查询示例
