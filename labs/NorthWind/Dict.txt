@@ -1,0 +1,205 @@
+Categories : 種類表
+
+相應欄位 :
+
+CategoryID : 型別ID
+
+CategoryName : 型別名
+
+Description : 型別說明
+
+Picture : 產品樣本
+
+CustomerCustomerDemo : 客戶型別表1
+
+相應欄位:
+
+CustomerID : 客戶ID
+
+CustomerTypeID : 客戶型別ID
+
+CustomerDemographics : 客戶型別表2
+
+相應欄位 :
+
+CustomerTypeID : 客戶型別ID
+
+CustomerDesc : 客戶描述
+
+Customers : 客戶表
+
+相應欄位 :
+
+CustomerID : 客戶ID
+
+CompanyName : 所在公司名稱
+
+ContactName : 客戶姓名
+
+ContactTitle : 客戶頭銜
+
+Address : 聯絡地址
+
+City : 所在城市
+
+Region : 所在地區
+
+PostalCode : 郵編
+
+Country : 國家
+
+Phone : 電話
+
+Fax : 傳真
+
+Employees : 員工表
+
+相應欄位 :
+
+EmployeeID : 員工代號
+
+LastName + FirstName : 員工姓名
+
+Title : 頭銜
+
+TitleOfCourtesy : 尊稱
+
+BirthDate : 出生日期
+
+HireDate : 僱用日期
+
+Address : 家庭地址
+
+City : 所在城市
+
+Region : 所在地區
+
+PostalCode : 郵編
+
+Country : 國家用
+
+HomePhone : 宅電
+
+Extension : 分機
+
+Photo : 手機
+
+notes : 照片
+
+ReportsTo : 上級
+
+EmployeeTerritories : 員工部門表
+
+相應欄位 :
+
+EmployeeID : 員工編號
+
+TerritoryID : 部門代號
+
+Order Details : 訂單明細表
+
+相應欄位 :
+
+OrderID : 訂單編號
+
+ProductID : 產品編號
+
+UnitPrice : 單價
+
+Quantity : 訂購數量
+
+Discount : 折扣
+
+Orders : 訂單表
+
+相應欄位 :
+
+OrderID : 訂單編號
+
+CustomerID : 客戶編號
+
+EmployeeID : 員工編號
+
+OrderDate : 訂購日期
+
+RequiredDate : 預計到達日期
+
+ShippedDate : 發貨日期
+
+ShipVia : 運貨商
+
+Freight : 運費
+
+ShipName : 貨主姓名
+
+ShipAddress : 貨主地址
+
+ShipCity : 貨主所在城市
+
+ShipRegion : 貨主所在地區
+
+ShipPostalCode : 貨主郵編
+
+ShipCountry : 貨主所在國家
+
+Products : 產品表
+
+相應欄位 :
+
+ProductID : 產品ID
+
+ProductName : 產品名稱
+
+SupplierID : 供應商ID
+
+CategoryID : 型別ID
+
+QuantityPerUnit : 數量
+
+UnitPrice : 單價
+
+UnitsInStock : 庫存數量
+
+UnitsOnOrder : 訂購量
+
+ReorderLevel : 再次訂購量
+
+Discontinued : 中止
+
+Region : 地區表
+
+相應欄位 :
+
+RegionID : 地區ID
+
+RegionDescription : 地區描述
+
+Shippers : 運貨商
+
+相應欄位 :
+
+ShipperID : 運貨商ID
+
+CompanyName : 公司名稱
+
+Phone : 聯絡電話
+
+Suppliers : 供應商表
+
+相應欄位 :
+
+ShipperID : 供應商ID
+
+CompanyName : 供應商姓名
+
+Phone聯絡電話
+
+Territories : 地域表
+
+相應欄位 :
+
+TerritoryID : 地域編號
+
+TerritoryDescription : 地域描述
+
+RegionID : 地區編號
