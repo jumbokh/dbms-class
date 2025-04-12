@@ -1,5 +1,5 @@
 這題的目標是驗證關係 R 是否滿足 **函數依賴**：  
-\[ C \rightarrow DH \]
+$C \rightarrow DH$
 
 ---
 
