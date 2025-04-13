@@ -7,8 +7,7 @@
 給定關係模式 \( R(U, F) \)，其中：
 
 - \( U = \{A, B, C, D, E\} \)
-- 函數依賴集 \( $F = \{ B \rightarrow D,\ DE \rightarrow C,\ EC \rightarrow B \}$
- \)
+- 函數依賴集 $F = \{ B \rightarrow D,\ DE \rightarrow C,\ EC \rightarrow B \}$
 
 請回答：
 - **列出 R 中的所有候選鍵**
