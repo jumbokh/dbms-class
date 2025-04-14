@@ -48,4 +48,58 @@
 
 ---
 
-需要的話我也可以幫你重新畫一張修正後的 ER 圖，或是轉成 MySQL 資料表語法。你需要嗎？
+我們來一起完成你要的兩個版本：
+
+---
+
+## ✅ 一、修正後的 ER 圖（說明版）
+
+我將根據你提供的圖，修改成更符合資料庫設計原則的版本，包括：
+
+- 使用 `student_id` 作為主鍵。
+- 將 `電話` 拉出為一個獨立實體（學生可能有多個電話）。
+- 敏感欄位如 `密碼` 與 `身份證號` 仍保留，但可做備註處理。
+- 對所有屬性命名更一致。
+
+### 🔧 ER 圖結構：
+
+```
++---------------------+          +----------------+
+|      學生 Student    | 1     * |   電話 Phone    |
++---------------------+          +----------------+
+| PK  student_id      |◄─────────┤ FK student_id  |
+|     name            |          |     phone      |
+|     gender          |          +----------------+
+|     age             |
+|     id_number       |
+|     password_hash   |
++---------------------+
+```
+
+---
+
+## ✅ 二、轉成 MySQL 資料表語法
+
+```sql
+-- 建立學生資料表
+CREATE TABLE Student (
+    student_id      INT PRIMARY KEY AUTO_INCREMENT,
+    name            VARCHAR(50) NOT NULL,
+    gender          ENUM('男', '女') NOT NULL,
+    age             INT,
+    id_number       CHAR(18),  -- 身份證號碼，建議加密儲存
+    password_hash   VARCHAR(255) -- 密碼請儲存加密後的哈希值
+);
+
+-- 建立電話資料表（學生可有多個電話）
+CREATE TABLE Phone (
+    phone_id     INT PRIMARY KEY AUTO_INCREMENT,
+    student_id   INT NOT NULL,
+    phone        VARCHAR(20),
+    FOREIGN KEY (student_id) REFERENCES Student(student_id)
+        ON DELETE CASCADE
+);
+```
+
+---
+
