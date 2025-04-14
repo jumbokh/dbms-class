@@ -1,4 +1,4 @@
-![ER]()
+![ER](https://github.com/jumbokh/dbms-class/blob/main/images/ER-1.png)
 
 是的，這張「學生」實體的 ER 圖（實體關係圖）在資料庫設計的觀點下，存在幾個常見的設計問題，我們可以一起來檢視：
 
