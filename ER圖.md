@@ -100,6 +100,6 @@ CREATE TABLE Phone (
         ON DELETE CASCADE
 );
 ```
-
+![E-R2](https://github.com/jumbokh/dbms-class/blob/main/images/ER-2.png)
 ---
 
