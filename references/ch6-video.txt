@@ -1,0 +1,17 @@
+P187扩展阅读： 求关系模式 R(U,F)所有的后选码
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3WPSA577&projectId=PKAASAX7H&state=0.9758415672904357
+
+函数依赖
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F3SKRWWH8&projectId=PKAASAX7H
+
+多值依赖
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=FKDK6WWHD&projectId=PKAASAX7H
+
+范式体系
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=F36YRQQH8&projectId=PKAASAX7H
+
+逻辑蕴涵与推理系统
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=PKWJRWW7D&projectId=PKAASAX7H
+
+模式分解与算法
+https://abooks.hep.com.cn/h5/resource/detail?resourceId=PK4ZRWQH8&projectId=PKAASAX7H
